@@ -1,4 +1,4 @@
 # HTML-CSS
  Exercios do curso HTML e CSS
 
-atualiazando o readme
+Estou aprendendo a criar sites e agora vou gerenciar meus repositorios 
