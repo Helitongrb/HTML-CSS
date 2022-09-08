@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua a tela do seu navegador</p>
+
+    <picture><!-- <picture> é um container usado para especificar múltiplos elementos <source> para um elemento específico <img> contido nele-->
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/imagem-m.png" type="image/png"> <!--MAX WIDTH = largura máxima-->
+
+        <!--guanabra mudou p media type para largura max ao inves de min-->
+        
+        <!--Max-width é o pixel maximo para troca de imagem, se a imagem for menos de 1000 ela ira alterar para uma imagem menor-->
+        
+        <!--sempre por o "source" em ordem decrescente para adpatação de imagens EX: começamos com a imagem G, vamos por a cima o source para imagem M e depois para P, sempre um acima de outro-->>
+        <img src="imagens/imagem-g.png" alt="imagens flexivel">
+    </picture>
+    <h1>Reproduzir audios</h1>
+    <p>Vamos agora aprender a reproduzir audios no meu site em HTML5</p>
+    <audio 
+    src="medias/abençoado.mp3" controls autoplay >
+<!--o auto play foi adicionada para tocar o audio e o COONTROLS para aparecer o menu de pause e play-->
+    </audio> <!--tag audio para adicionar audios-->
+    <P>outra forma de adicionar o audio, conferir tags</P>
+    <audio preload="metadata" controls loop> <!--sempre por as tags dentro do audio--> <!--preload é para selecionar como vai carregar o audio-->
+        <source src="medias/abençoado.mp3" type="audio/mpeg" ><!--adicionei o source src e o media type para MP3 é mpeg
+        conforme o tipo de arquivo muda o type, para ver outros type é so acessar o site iuna-->
+    </audio>
+</body>
+</html>

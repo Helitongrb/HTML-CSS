@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> 
+    <p>Você pode acessar meu  <a href="http://gustavoguanabara.gitgub.io" Target="_blank" rel="external"> <!--usamo link externos para clicar e abrir uma outra pagina-->
+
+        
+    </a> repositório público no github </a></p> 
+    <!--a TAG A é usada para criar referencias hypertextos (href)
+    textos que viram links  -->
+    <p>Você também pode acessar o <a href="https://youtube.com">youtube</a> para ouvir musica</p>
+    <!--Target="_blank" – Carrega a página em uma nova janela do navegador. Target="_self" – Carrega a página no próprio frame. Target="_top" – Carrega a página por toda a extensão da janela do navegador, ignorando a estrutura dos frames. Quando o visitante clicar sobre este link, a página links.-->
+
+    <!--O rel=”external”, indica que o documento referenciado não é parte do mesmo site do documento que o referencia-->
+
+    <h2>Links Internos</h2> 
+    <p>Está é minha primeira pagina do site. Se você quiser acessar a segunda pagina <a href="pag02.html" rel="next">click aqui</a> </p> 
+        <!--rel – Esse atributo define o relacionamento entre o arquivo em que o comando está escrito e o arquivo que é definido no caminho do href-->
+    <!--a tag A conhecida como "ancora"-->
+    <p>Você também pode acessar nossa pagina de noticias acessando o <a href="Noticias/pag03.html">link</a> </p> <!--apertei crtl + espaço localizei a pasta noticias e pagina 03 estava lá-->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Livros/165739775262c9e1f89e917.pdf" download="165739775262c9e1f89e917.pdf" type="application/pdf" >Baixar o Livro em pdf</a></div></li>
+        <ol><strong>Downloads Extras</strong>
+            <li><a href="https://download.winzip.com/gl/gad/winzip26.exe" download="winzip26.exe" type="text/html"> winzi free</a></li><!--usei a tag "download" para criar um link de download depois botei o nome do arquivo  e por ultimo coloquei a tag type para por tipo de download -->
+            <li>
+                <a href="Livros/paisagem.zip" dowload="paisagem.zip" type="application/zip">Arquivo zip</a><!--usei a tag type="application/zip" para baixar um arquivo zip-->
+            </li>
+            <li><a href="#">vazio</a></li>
+        </ol>
+    </ul>
+</body>
+</html>

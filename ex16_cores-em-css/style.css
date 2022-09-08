@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*usei o @charset "utf-8" para não ter problemas com compatibilidade*/
+
+*{
+
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif; /*font family para escolher a fonte*/
+   background-image: linear-gradient(to right, #DBF227, #9FC131);
+}
+main{
+    background-color: white;
+    width: 600px; /*usei o width para largura em píxels*/
+    padding: 10px; /*o padding é usado para acochoamento*/
+    margin: auto; /*margin auto é usado para centralizer*/
+    border-radius: 15px;/*border radius é usado para arrendodar as borda*/
+    box-shadow: 5px 5px 10px #4d8306af;/*é usado para por sombra, e os pixels são as direções da sombra e por ultimo a cor*/
+}
+h1{
+    color: #005C53;
+    text-align: center;
+    text-shadow: 1px 1px 2px #043833be;
+}
+h2 {
+    color: #D6D58E;
+}
+p {
+    text-align: justify; /*usei o text-aling para justificar os poragraf*/
+}

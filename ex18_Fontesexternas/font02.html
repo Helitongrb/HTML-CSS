@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face { /*usei o font-face para usar fonte externa*/
+            font-family: 'Catalish' ;
+            src: url('Catalish Huntera.ttf')/*para encontrar o url é so por o nome exato do arquivo salvo*/
+             format('truetype'), url('Catalish Huntera.otf') format('opentype');
+
+            /*
+                 tipos de format
+
+                opentype (otf)
+                truetype (truetype)
+                embedded-opentype
+                truetype-aat (apple advanced typography)
+                svg
+            
+            */
+            font-weight:normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Catalish', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab ipsa ratione dolorum ipsam atque perspiciatis, harum, veniam nulla consequatur amet quis officiis, omnis accusamus provident praesentium eligendi! Repellat, quae?</p>
+</body>
+</html>
