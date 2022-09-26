@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+           /* height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: no-repeat; /*usei para ele nao repetir e eu saber onde mexer a imagem*/
-            background-size: cover; /*faz cobrir a imagem na tela
-            */
+            background-repeat: no-repeat; usei para ele nao repetir e eu saber onde mexer a imagem
+            background-size: cover; faz cobrir a imagem na tela
+            
+            background-attachment: fixed;o scroll fundo ira rolar junto*/
+
+            /*Shorthand - background
+                color > image > position > repeat > attachment
+            
+               sequência da shorthand 
+                */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px; /*largura*/
+            max-width: 400px; /*usei o max width para ter uma largura maxima*/
             padding: 10px;
             margin:auto;
             border: 3px solid darkblue;

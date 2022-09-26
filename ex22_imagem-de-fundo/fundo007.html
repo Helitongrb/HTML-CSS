@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;/*alvo na div*/
+
+            position: relative; /*todo posicionamento de um box em htlm por padrão e posicionamento relativo*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+
+
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;/*alvo na div*/
+
+            position: absolute; /*se a posição for absolute posso mexer com left e top*/
+            height: 200px;/*altura*/
+            width: 400px;/*largura*/
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); /*se eu por negativo ele ira movimentar para o lado oposto*/
+            /*botei -50% para ficar igual left e  top*/
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <!--quando for fazer alinhamento vertical é necessario container e conteudo-->
+        <article id="conteudo"> 
+        
+        </article>
+    </section>
+</body>
+</html>
