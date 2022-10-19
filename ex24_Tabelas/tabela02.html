@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grande</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        table{
+
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+        }
+        thead{
+            background-color: rgb(29, 28, 28);
+            color: white;
+        }
+        td.num{
+
+            text-align: right;
+        }
+        tfoot{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDE
+        TABLE
+            THEAD
+                TR TD TH
+            TBODY
+                TR TD TH
+            TFOOT
+                TR TD TH
+
+    -->
+    <table> <!--criando tabela-->
+        <thead><!--Cabeçalho da tabela-->
+            <tr>
+                <th>estado</th>
+                <th>população</th>
+            </tr>
+        </thead>
+        <tbody><!--corpo da tabela-->
+            <tr> <!--crie um tr para fazer uma linha, cada td (dado) dentro da tr pula somente a coluna, continua na mesma linha-->
+                <td>São Paulo</td>
+                <td class="num">41 000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 000000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 000000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 000000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina
+                <td class="num">6 248 436</td>
+            </tr>
+            <tr>
+                <td>Goiás
+                <td class="num">6 003 788</td>
+            </tr>
+        </tbody>
+        <tfoot><!--roda pé-->
+            <tr>
+                <th>Total de Habitantes</th>
+                <td><strong>158,876,033</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
