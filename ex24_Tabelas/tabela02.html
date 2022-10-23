@@ -12,22 +12,40 @@
         }
         table{
 
-            width: 500px;
+            width: 400px;   
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             padding: 3px;
             font-size: medium;
+            font-weight: bolder;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(128, 128, 128, 0.61);
         }
 
         td, th {
             border: 1px solid black;
+            height: 45px;
         }
+
         thead{
             background-color: rgb(29, 28, 28);
             color: white;
         }
+        thead > tr > th {
+            position: sticky; /*usei o sticky para colar o cabeçalho na rolagem*/
+            top: -1px; /*siginifica que o cabeçalho vai colar no top*/
+            background-color: rgb(29, 28, 28);
+        }
+        tbody > tr:nth-child(2n) {/*TR JUNTO COM A PSEUDOCLASSE NTH-CHILD 2N QUE SIGNIFICA QUE IRA MODIFCAR MINHAS ALTERAÇÕES A CADA DUAS LINHAS, ESTOU USADO PARA FAZER ZEBRADO NA TABELA
+            podendo usar também em impar(odd) ou par(even)*/
+            background-color: gray;
+        } 
+
+    
+        
+        
         td.num{
 
             text-align: right;
@@ -66,6 +84,86 @@
             <tr> <!--crie um tr para fazer uma linha, cada td (dado) dentro da tr pula somente a coluna, continua na mesma linha-->
                 <td>São Paulo</td>
                 <td class="num">41 000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 000000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 000000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 000000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina
+                <td class="num">6 248 436</td>
+            </tr>
+            <tr>
+                <td>Goiás
+                <td class="num">6 003 788</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 000000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 000000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 000000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina
+                <td class="num">6 248 436</td>
+            </tr>
+            <tr>
+                <td>Goiás
+                <td class="num">6 003 788</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
