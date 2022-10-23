@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+                width: 800px; /*largura*/
+                height: 200px;
+                border-collapse: collapse; /*usei para juntar as borddas*/
+        }
+        thead{
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        tbody > tr:nth-child(2n) {/*TR JUNTO COM A PSEUDOCLASSE NTH-CHILD 2N QUE SIGNIFICA QUE IRA MODIFCAR MINHAS ALTERAÇÕES A CADA DUAS LINHAS, ESTOU USADO PARA FAZER ZEBRADO NA TABELA
+            podendo usar também em impar(odd) ou par(even)*/
+            background-color: gray;
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: center; /*botei os dado no centro*/ /*alinhamento horizontal*/
+            vertical-align: bottom; /*ajustei alinhamento vertical*/      
+        }
+        div#container{ /*Botei a tabela toda dentro de uma div para por barra de rolagem*/
+            overflow-x: auto; /*overflow x é usado para barre de rolagem horizontal*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequnas</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ut, tenetur cum maiores, ducimus quo vero illo fuga sapiente magni rem at facilis possimus ab quisquam veniam enim molestias in.</p>
+    <div id="container"> <!--Botei a tabela toda dentro de uma div para por barra de rolagem-->
+        <table>
+            <Caption>Tabelas Responsivas</Caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>fev</th>
+                    <th>mar</th>
+                    <th>abr</th>
+                    <th>mai</th>
+                    <th>jun</th>
+                    <th>jul</th>
+                    <th>ago</th>
+                    <th>set</th>
+                    <th>out</th>
+                    <th>nov</th>
+                    <th>dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Loja 1</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Loja 2</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Loja 3</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Loja 4</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Loja 5</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Loja 6</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
