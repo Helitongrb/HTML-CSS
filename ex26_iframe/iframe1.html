@@ -5,14 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframe</title>
+    <style>
+            iframe{
+                width: 400px;
+                height: 400px;
+
+                /*CSS É SOBERANO por mais que tenha css inline, oque ira fica e o style*/
+            }
+
+
+
+
+    </style>
+
+
 </head>
 <body>
+
+                <!--
+                    !!!!!!!!!  TAMANHO PADRÃO DE IFRAME  !!!!!!!!!!!!
+                                    300 X 150 PX
+                
+                -->
+
+
     <h1>Testando o uso de um iframe</h1>
     <p>Acessando o site do  
-        <iframe src="https://www.cursoemvideo.com/" frameborder="0"> <!-- no src eu botei o link do site e no frameborder é a borda do iframe -->
-        
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" height="500"> <!-- no src eu botei o link do site e no frameborder é a borda do iframe -->
+            <a href="https://www.cursoemvideo.com/" target="_blank">Curso em video</a><!--tudo que estiver aqui dentro mostrará caso nao seja compativel com navegador-->
         </iframe> <!--iframe serve para criar uma janela com um conteudo exeterno dentro do seu site-->
         
     para aprender programar</p> 
+    <p>o repositorio do Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="300">
+
+            <a href="https://gustavoguanabara.github.io" target="_blank">Repositorio</a><!--tudo que estiver aqui dentro mostrará caso nao seja compativel com navegador-->
+
+        </iframe>
+        também é bem legal!
+    </p>
 </body>
 </html>
