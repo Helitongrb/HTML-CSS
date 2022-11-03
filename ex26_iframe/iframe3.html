@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odit voluptatem eius ea praesentium at perspiciatis ab reiciendis iusto consequuntur sequi corrupti numquam iste quos, voluptate quod cupiditate corporis eos!</p>
+
+    <ul>
+        <li><a href="pagina1.html" target="frame"> Pagina 1</a></li>
+        <li><a href="pagina02.html" target="frame"> Pagina 02</a></li>
+        <li><a href="pagina3.html" target="frame"> Pagina 03</a></li>
+
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum veritatis, tempora delectus nesciunt perferendis itaque incidunt voluptatem ea repudiandae, deserunt placeat temporibus necessitatibus assumenda architecto ab, sit atque iusto distinctio.</p>
+
+        <iframe id="tela" name="frame" srcdoc="<h1>Escolha um das paginas a cima</h1>"> <!--botei a tag name para indentificar e usa em um targert no meu caso vou por no link da pista e abrir dentro de um iframe-->
+
+         <!--srcdoc é usado para por html dentro-->   
+            <p>infelizmente seu navegador não é compativel com isso!</p>
+        </iframe>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam molestiae iure architecto delectus accusantium deleniti vero eveniet eos quae consequuntur corrupti reiciendis, voluptatem consectetur neque porro quod inventore aliquid laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vitae incidunt mollitia inventore aperiam quis aspernatur ut. Corrupti enim natus magni pariatur illum blanditiis fugiat! Rerum veniam quisquam voluptate necessitatibus?</p>
+</body>
+</html>
