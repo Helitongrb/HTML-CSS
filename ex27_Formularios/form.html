@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+                <!--!!!!!!!!!! IMPORTANTE !!!!!!!!!!!!!
+                        não se faz um formulario
+                        sem relacionar um label
+                        e um input
+                                                        -->
+
+    <h1>Meu primeiro formulaarios</h1>
+    <form action="cadastrp.php"> <!--a função action vai enviar os dados para o arquivo php  -->
+        <p><label for="inome">Nome:</label> <!--o label é usado para por o id e unir o nome com o imput-->
+            
+            <!--É BOM SEMPRE CRIAR "ETIQUETA (UNIR O NOME: COM O INPUT PARA UM SABER Q É O OUTRO)"-->
+            <input type="text" name="nome" id="inome"></p> <!--imput text cria caixa de texto-->
+        <p><label for="isobrenome">Sobrenome:</label> <!--o label é usado para por o id e unir o nome com o input-->
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p> <!--Input submit é usado para clicar e enviar-->
+
+
+    </form>
+</body>
+</html>
