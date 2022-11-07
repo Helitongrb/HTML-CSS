@@ -10,3 +10,5 @@ todo posicionamento de um box em htlm por padrão é posicionamento relativo
 https://professorguanabara.github.io/projeto-cordel/
 
 NO FORMULARIO A FUNÇÃO ACTION É USADA PARA ENVIAR OS DADOS QUANDO CLICAR EM ENVIAR (INPUT: SUBMITE)
+
+NO METHOD GET SÓ É USANDO COM O MAXIMO DE 3000 BITS (3K DE LETRAS), ENVIO DE FOTOS E DADOS SENSIVEIS (SENHAS, BANCOS E ETC)
