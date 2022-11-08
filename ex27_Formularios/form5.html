@@ -8,9 +8,31 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get">
-      
+    <form action="cadastro.php" method="get" autocomplete="on">
 
+        <fieldset> <!--agrupar formulario-->
+            <legend>Sexo</legend>
+
+            <!--quando colocamos input do tipo radio com mesmo name ele marcará apenas uma opção do fieldset-->
+            <input type="radio" name="sexo" id="isxmas">
+            <input type="radio" name="sexo" id="isxfem">
+
+        </fieldset>
+
+
+        <fieldset> <!--agrupar formuláario-->
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label> <br>
+            <input type="checkbox" name="surf" id="isurf" checked><label for="isurf">Surf</label> <br>
+            <!--checked é para deixar marcado-->
+        </fieldset>
+            <!--check box é usado para criar uma caxinha para marcar-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
