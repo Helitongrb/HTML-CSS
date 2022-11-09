@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset> <!--agrupar formulario-->
+            
+            <p>
+                <label for="iest">Estado</label>
+                <select name="est" id="iest">
+                    <optgroup label="Região Suldeste">
+                        <option value="sp">São paulo</option>
+                        <option value="rj">Rio de janeiro</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="Sc">Santa Catarina</option>
+                        <option value="pr">Parána</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup> <!--Cria grupos na lista de formulario
+                    conferir o index para melhor entendimento-->
+
+                </select> <!--cria e descee uma lista-->
+            </p>
+            <p>
+                <label for="iprof">Profisão:</label>
+                <input type="text" name="prof" id="iprof" list="ilist">
+                    
+                <datalist id="ilist"><!--Criei uma lista para caixa de testo-->
+                        <option value="adm">Administrador</option>
+                        <option value="cont">Contabilista</option>
+                        <option value="dev">Desenvolvedor</option>
+                        <option value="prof">Professor</option><!--opções da lista-->
+                </datalist>
+                    <!--Criei uma lista para caixa de testo-->
+                </p>
+                <p>
+                    <label for="imsg"></label>
+                    <textarea name="msg" id="imsg" cols="30" rows="10">
+                    </textarea> <!--cria uma caixa de menssagem para o visitante mandar "feedback"-->
+                </p>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+       
+        </fieldset>
+
+    </form>
