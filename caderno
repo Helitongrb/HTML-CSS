@@ -4,6 +4,7 @@ https://helitongrb.github.io/HTML-CSS/ex6_Formatação de textos
 
 
 !!!!!SHORTHANDS!!!!!! 
+    CODIGOS EM UMA UNICA LINHA
 
 
 todo posicionamento de um box em htlm por padrão é posicionamento relativo
@@ -12,3 +13,7 @@ https://professorguanabara.github.io/projeto-cordel/
 NO FORMULARIO A FUNÇÃO ACTION É USADA PARA ENVIAR OS DADOS QUANDO CLICAR EM ENVIAR (INPUT: SUBMITE)
 
 NO METHOD GET SÓ É USANDO COM O MAXIMO DE 3000 BITS (3K DE LETRAS), ENVIO DE FOTOS E DADOS SENSIVEIS (SENHAS, BANCOS E ETC)
+
+MEDIA QUERIES
+
+As consultas de mídia são um recurso do CSS 3 que permite que a renderização do conteúdo se adapte a diferentes condições, como a resolução da tela. Tornou-se um padrão recomendado pelo W3C em junho de 2012, e é uma tecnologia fundamental de web design responsivo.
