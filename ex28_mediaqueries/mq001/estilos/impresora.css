@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*   Estilos para impressora*/
+
+*{
+     margin: 10px;
+     padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace; /*fonte recomendada para impressora, maior facilidade de leitura*/
+    font-size: 1.5em;
+    line-height: 1.5em; /*Espaçamento entre as linhas*/
+}
+menu{
+    display: none; /*area de menu nao ira aparece na impressão*/
+}
+
+article::after{
+    content: 'esse artigo foi impresso através do pc de Heliton';
+}
+
+article{
+    width: 100%;
+}
