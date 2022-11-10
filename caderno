@@ -16,4 +16,8 @@ NO METHOD GET SÓ É USANDO COM O MAXIMO DE 3000 BITS (3K DE LETRAS), ENVIO DE F
 
 MEDIA QUERIES
 
-As consultas de mídia são um recurso do CSS 3 que permite que a renderização do conteúdo se adapte a diferentes condições, como a resolução da tela. Tornou-se um padrão recomendado pelo W3C em junho de 2012, e é uma tecnologia fundamental de web design responsivo.
+As consultas de mídia são um recurso do CSS 3 que permite que a renderização do conteúdo se adapte a diferentes condições, como a resolução da tela. Tornou-se um padrão recomendado pelo W3C em junho de 2012, e é uma tecnologia fundamental de web design responsivo. 
+
+media queries é a mesma coisa que media type/features type= tipos de tela
+features = caracteristicas de telas 
+features sempre são feita dentro dos ( )
