@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*{
+   
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    
+}
+
+header{
+    background-color: gray;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+
+
+}
+span#burguer {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /*faz virar mãozinha quando poem em cima*/
+}
+span#burguer:hover {
+    background-color: white;
+    color: black;
+    
+
+}
+
+menu{
+    display: none; /*deixei no display none para as opções entrarem para o menu*/
+}
+
+menu > ul{
+    list-style-type: none; /*efeito de bolinha no lado de cada item da lista*/
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    border-top: 2px  solid gray;
+}
+
+menu > ul > li > a:hover{
+    background-color: rgb(211, 210, 210);
+
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article > h2 {
+    padding-bottom: 25px;
+}
+article > p {
+    text-align: justify;
+    text-indent: 20px; /*espaçamento entre paragrafos  */
+    margin-bottom: 15px;
+}
