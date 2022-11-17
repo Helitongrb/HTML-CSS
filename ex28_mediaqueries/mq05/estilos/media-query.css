@@ -25,9 +25,6 @@ Grandes telas: acima de 1200px
             display: block;
         }
 
-        menu > ul {
-            border-radius: 5px;
-        }
 
         menu > ul >li {
             display: inline-block;
